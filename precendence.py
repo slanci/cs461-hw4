@@ -47,14 +47,44 @@ class Graph:
 
 
 def main():
+    print("=== Ex. 1 ===")
     g = Graph(6)
     g.addEdge(0, 1)
-    g.addEdge(0, 2)
-    g.addEdge(1, 3)
-    g.addEdge(1, 4)
-    g.addEdge(2, 5)
+    g.addEdge(1, 2)
+    g.addEdge(2, 4)
+    g.addEdge(3, 4)
+    g.addEdge(4, 5)
 
     g.topologicalSort()
+    print("=== End of Ex. 1 ===\n")
+
+    print("=== Ex. 2 ===")
+    g = Graph(7)
+    g.addEdge(0, 2)
+    g.addEdge(1, 4)
+    g.addEdge(2, 4)
+    g.addEdge(2, 5)
+    g.addEdge(3, 5)
+    g.addEdge(4, 6)
+    g.addEdge(5, 6)
+
+    g.topologicalSort()
+    print("=== End of Ex. 2 ===\n")
+
+    print("=== Ex. 3 ===")
+    g = Graph(8)
+    g.addEdge(0, 3)
+    g.addEdge(0, 4)
+    g.addEdge(1, 4)
+    g.addEdge(2, 4)
+    g.addEdge(2, 6)
+    g.addEdge(3, 5)
+    g.addEdge(4, 7)
+    g.addEdge(6, 7)
+    g.addEdge(5, 7)
+
+    g.topologicalSort()
+    print("=== End of Ex. 3 ===\n")
 
 
 if __name__ == '__main__':
