@@ -1,9 +1,9 @@
-# EXAMPLE TOP-SORT CODE
-
+# https://www.geeksforgeeks.org/python-program-for-topological-sorting/
+# HOW WE MODIFIED IT ACIKLANACAK
 from collections import defaultdict
 
 
-# Class to represent a graph
+# NODE EKLENICEK
 
 
 class Graph:
