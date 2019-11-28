@@ -2,6 +2,7 @@
 
 from collections import defaultdict
 
+
 # Class to represent a graph
 
 
@@ -42,14 +43,19 @@ class Graph:
                 self.topologicalSortUtil(i, visited, stack)
 
         # Print contents of stack
-        print (stack)
+        print(stack)
 
 
-g = Graph(6)
-g.addEdge(0, 1)
-g.addEdge(0, 2)
-g.addEdge(1, 3)
-g.addEdge(1, 4)
-g.addEdge(2, 5)
+def main():
+    g = Graph(6)
+    g.addEdge(0, 1)
+    g.addEdge(0, 2)
+    g.addEdge(1, 3)
+    g.addEdge(1, 4)
+    g.addEdge(2, 5)
 
-g.topologicalSort()
+    g.topologicalSort()
+
+
+if __name__ == '__main__':
+    main()
